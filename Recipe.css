@@ -1,0 +1,170 @@
+
+body {
+  background-image: url(charlotte-cowell-ry3yRs1Ws4Q-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #2814c4;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.header {
+  text-align: center;
+  width: 300px;
+  height: 50px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #17161f;
+  border-radius: 10px;
+  background-color: #1DDEA4;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.image1 {
+  width: 20%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+.card-container {
+  position: relative;
+  height: 500px;
+  margin-top: 40px;
+}
+
+.card {
+  position: absolute;
+  width: 150px;
+  text-align: center;
+  
+  border-radius: 10px;
+  
+  font-family: 'Inter', sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+.cake {
+  top: 20px;
+  left: 20%;
+}
+
+.mandazi {
+  top: 80px;
+  left: 40%;
+}
+
+.samosa {
+  top: 140px;
+  left: 60%;
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header {
+    width: 90%;
+    font-size: 20px;
+  }
+
+  .image1 {
+    width: 50%;
+    height: auto;
+  }
+
+  .card-container {
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 120px;
+  }
+
+  .cake {
+    top: 10px;
+    left: 10%;
+  }
+
+  .mandazi {
+    top: 50px;
+    left: 30%;
+  }
+
+  .samosa {
+    top: 90px;
+    left: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    gap: 10px;
+  }
+
+  .header {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .card {
+    width: 100px;
+  }
+
+  .cake {
+    top: 5px;
+    left: 5%;
+  }
+
+  .mandazi {
+    top: 30px;
+    left: 25%;
+  }
+
+  .samosa {
+    top: 60px;
+    left: 45%;
+  }
+}
+}

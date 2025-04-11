@@ -1,0 +1,94 @@
+.header {
+    font-family: 'Julee', cursive;
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center; 
+  }
+  
+  nav ul {
+    list-style: none;  
+    margin: 0;         
+    padding: 0;        
+    
+    display: flex;     
+    justify-content: center; 
+    align-items: center; 
+    gap: 70px;         
+  }
+  
+
+  nav ul li a {
+    text-decoration: none;
+    color: #ffffff;        
+    font-weight: 600;      
+    font-size: 1rem;       
+    font-family: 'Inter', sans-serif; 
+
+  }
+  nav ul li a:hover {
+    color: #ffcc00;        
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;     
+    border-radius: 5px;    
+}
+ body {
+    background-image: url(american-heritage-chocolate-vdx5hPQhXFk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+
+  }
+  .image {
+    width: 100%;         /* Full width of the container */
+    height: 100vh;       /* Full height of the viewport */
+    display: flex;       /* Enables flexbox for layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;  /* Centers content vertically */
+    gap: 20px;           /* Adds space between the image and text */
+    position: relative;  /* Allows absolute positioning of child elements */
+}
+
+.element {
+    width: 300px;         /* Circle size */
+    height: 300px;        /* Circle size */
+    display: flex;        /* Enables flexbox for centering */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;  /* Centers content vertically */
+    object-fit: cover;    /* Ensures the image covers the circle shape */
+    border-radius: 50%;   /* Makes the image circular */
+    position: relative;   /* Keeps it positioned within the flex container */
+}
+
+.ptext {
+    font-family: 'Irish Grover', cursive;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: left;     /* Aligns text to the left */
+    margin: 0;           /* Removes default margin */
+    position: relative;  /* Keeps it positioned within the flex container */
+}
+#ABOUT {
+    background-color: #f8f9fa; /* Fallback if image fails */
+    background-image: url('charlotte-cowell-ry3yRs1Ws4Q-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+    color: #333;
+    
+    /* Add these to isolate the background: */
+    width: 100vw; /* Full viewport width */
+    position: relative; /* Needed for left/right offsets */
+    left: 50%; /* Shift to the center */
+    right: 50%;
+    margin-left: -50vw; /* Pull back to edge */
+    margin-right: -50vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: soft border */
+}
+.about-content {
+    max-width: 800px; /* Constrain text width */
+    margin: 0 auto; /* Center content */
+    padding: 20px; /* Inner spacing */
+}
